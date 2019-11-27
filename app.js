@@ -92,7 +92,10 @@ class Line {
   displayLoss() {
     ctx.fillStyle = "white";
     ctx.font = "15px Helvetica";
-    ctx.fillText(`~ loss : ${this.loss}`, 10, canvas.height - 10);
+    let dataText = ""
+    for(let i of this.data) dataText += `[${i}] `
+    ctx.fillText(`~ loss : ${this.loss}, data : ${dataText}`, 10, canvas.height - 10);
+    
   }
 }
 
