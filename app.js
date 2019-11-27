@@ -106,7 +106,7 @@ canvas.addEventListener("click", e => {
 });
 
 let graph = new Graph();
-let line = new Line(parseInt(prompt("Expression Degree")));
+let line = new Line(parseInt(prompt("Expression Degree (v1)")));
 
 function render() {
   requestAnimationFrame(render);
