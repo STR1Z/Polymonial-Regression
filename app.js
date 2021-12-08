@@ -82,7 +82,7 @@ class Line {
       this.data[0] += error * lr;
 
       for (let i = 1; i < this.data.length; i++) {
-        this.data[i] += error * point.x ** i * lr;
+        this.data[i] += error * i * point.x ** (i - 1) * lr;
       }
     }
 
